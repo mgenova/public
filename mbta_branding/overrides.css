@@ -1,0 +1,145 @@
+/* replace the aqua green background with something that matches your color scheme.*/
+#header {
+  /*you can use .pngs with alpha transparency since you dont have to worry about IE6*/
+  background: url("header_bg.jpg?v1") repeat-x scroll left center transparent;
+}
+
+/*replace the "Canvas" logo with your school's*/
+#header-logo, #header.no-user #header-logo {
+  background: url("header_logo.png?v1") no-repeat scroll 0 0 transparent;
+  bottom: 10px;
+  height: 50px;
+  left: 6px;
+  width: 191px;
+}
+/* if you are going to replace the Canvas logo on the top left with your school's, 
+you should move a (smaller) Cavas logo to the right side of the header'*/
+#header-logo-secondary {
+  /* note, you should set up you webserver to set the right headers to cache these 
+     images you link to for a long time (eg: 1 year) and change the querystring 
+     (the part that says "?v1") to force users to download a new version if you 
+     change it, see: http://developer.yahoo.com/performance/rules.html#expires */
+  background: url("header_canvas_logo.png?v1") no-repeat scroll 0 0 transparent;
+  bottom: 11px;
+  height: 26px;
+  position: absolute;
+  right: 26px;
+  width: 135px;
+  display: block;
+}
+/*make room for the menu since my sample logo is bigger than default canvas logo*/
+#menu{ margin-left: 200px; }
+
+/*make the menu lettering white and make it go back to grey when you hover over*/
+.menu-item .menu-item-title, .menu-item .menu-item-no-drop { color: #FFFFFF; }
+.menu-item.hover .menu-item-title { color: #555555; }
+
+/*style the #identity (the thing that says "Ryan Shaw | inbox | profile | logout | (feedback)" in top right) */
+#identity {  }
+#identity { background-image: none; }
+#identity .user_name a{ color: #ffffff !important; }
+#identity .user_name a{ font-weight:bold; }
+#identity a { color: #fff; }
+#identity #feedback_link{ border-color: #333; background-color: #333; }
+#identity .inbox a .unread-messages-count { background-color: #333; }
+
+
+ul#identity { color:#769f19 ;}
+
+
+
+
+
+
+
+
+
+/*change the background color and the color of 'stay signed in'*/
+#modal-box.login-box {
+background-color: #000000 !important
+color: #2784A0;
+}
+ 
+/*this will remove the extra canvas logo*/
+body.modal #modal-box.login-box h1 {
+background: none;
+height: 235px;
+}
+ 
+/*change location of image and resize to match image height and width*/
+#modal-box-inner {
+background: url("mbta_login.png?v1") no-repeat;
+
+height: 420px;
+width: 680px;
+/*adjust to move image to left and top*/
+margin-left: -25px;
+margin-top: -30px;
+color: #000066 !important;
+}
+
+
+
+
+
+/*change the color of 'don't know your password'*/
+body.modal #modal-box.login-box a { color: #94c81d !important; 
+
+}
+ 
+/*change the color of the login button*/
+body.modal #modal-box .btn, body.modal #login-box .btn
+{
+background-color: #94c81d !important;
+background-image: none !important;
+border-color: #94c81d;
+}
+ 
+#login_form .btn-primary, #login_form .btn-primary:hover {
+background-color: #ae5321;
+background-image: none;
+border: none !important;
+}
+
+div.login-options{
+  color:#ffffff;
+}
+
+body.modal #modal-box, body.modal #login-box {
+    box-shadow: 0 4px 20px -2px #000;
+    margin: 75px auto 20px;
+    position: relative
+}
+
+
+body.modal #modal-box {
+    background: none;
+}
+
+body.modal #modal-box.login-box {
+    background: none;
+
+}
+#login_form{
+  margin-left: 35px;
+  width:487px
+}
+
+body.modal #modal-box.login-box{
+
+ height:331px;
+  width:510px;
+  
+}
+
+#footer .footer-logo {
+  margin-left: 80px;
+}
+
+body {
+    background-color: transparent;
+    background-image: url("bg.jpg");
+    background-repeat: repeat;
+    background-position: left top;
+    min-width: 510px
+}
